@@ -1,8 +1,13 @@
 {
-    "name" : "",
+    "name" : "Preset Uniapp X",
     "appid" : "",
+    "versionName" : "1.0.0",
+    "versionCode" : "100",
     "description" : "",
-    "transformPx" : false,
+    "uni-app-x" : {
+        "vapor" : true,
+        "vapor-default-script-lang" : "ts"
+    },
     /* 微信小程序特有相关 */
     "mp-weixin" : {
         "appid" : "",

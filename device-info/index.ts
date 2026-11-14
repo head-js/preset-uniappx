@@ -1,5 +1,12 @@
-import uuid4 from 'vanilla.js/random/uuid4';
 import { APP_ID } from '@/utils/package-info';
+
+function uuid4(): string {
+  return 'xxxxxxxx-xxxx-4xxx-yxxx-xxxxxxxxxxxx'.replace(/[xy]/g, (c) => {
+    const r = (Math.random() * 16) | 0;
+    const v = c === 'x' ? r : (r & 0x3) | 0x8;
+    return v.toString(16);
+  });
+}
 
 const STORAGE_KEY = `${APP_ID}.LOCAL_UUID`;
 

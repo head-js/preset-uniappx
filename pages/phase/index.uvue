@@ -9,8 +9,8 @@ onShow(() => {
 
 <template>
   <view class="page">
-    <text class="title">Detail</text>
-    <text class="description">This is the application detail page.</text>
+    <text class="title">Phase</text>
+    <text class="description">This is the secondary Phase page.</text>
   </view>
 </template>
 
@@ -23,14 +23,12 @@ onShow(() => {
 }
 
 .title {
-  display: block;
   color: #1f2329;
   font-size: 48rpx;
   font-weight: 600;
 }
 
 .description {
-  display: block;
   margin-top: 20rpx;
   color: #646a73;
   font-size: 30rpx;

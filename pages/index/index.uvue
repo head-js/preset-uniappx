@@ -80,7 +80,7 @@ onUnload(() => {
       <text class="splash-copy">{{ splashStore.errorMessage }}</text>
       <button class="splash-button" @click="splashStore.retry">Retry</button>
     </view>
-    <view v-else>
+    <view v-else class="page-content">
       <text class="status">{{ statusText }}</text>
       <view class="device">
         <text class="device-row">App Name: {{ packageInfo.appName }}</text>
@@ -112,8 +112,15 @@ onUnload(() => {
   box-sizing: border-box;
   display: flex;
   flex-direction: column;
-  min-height: calc(100vh - var(--window-top, 0px));
+  height: 100%;
   padding-bottom: calc(100rpx + env(safe-area-inset-bottom));
+}
+
+.page-content {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  min-height: 0;
 }
 
 .splash-panel {
@@ -161,6 +168,7 @@ onUnload(() => {
 .logs {
   flex: 1;
   height: 0;
+  min-height: 0;
 }
 
 .log-item {

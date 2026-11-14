@@ -5,19 +5,12 @@ import { syncCustomTabBar } from "@/utils/custom-tab-bar";
 onShow(() => {
   syncCustomTabBar();
 });
-
-function backToProfile() {
-  uni.switchTab({ url: "/pages/profile/index" });
-}
 </script>
 
 <template>
   <view class="page">
-    <text class="title">Plan</text>
-    <text class="description">This is the secondary Plan page.</text>
-    <button class="action-btn" @click="backToProfile">
-      Back to Profile
-    </button>
+    <text class="title">Detail</text>
+    <text class="description">This is the application detail page.</text>
   </view>
 </template>
 
@@ -30,21 +23,15 @@ function backToProfile() {
 }
 
 .title {
-  display: block;
   color: #1f2329;
   font-size: 48rpx;
   font-weight: 600;
 }
 
 .description {
-  display: block;
   margin-top: 20rpx;
   color: #646a73;
   font-size: 30rpx;
   line-height: 1.6;
-}
-
-.action-btn {
-  margin: 40rpx 0 0;
 }
 </style>
